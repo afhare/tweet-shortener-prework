@@ -1,5 +1,5 @@
 # Write your code here.
-def dictionary(word)
+def dictionary
   substitutions = {
     "hello" => "hi",
     "to" => "2",
