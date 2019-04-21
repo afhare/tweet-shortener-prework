@@ -19,8 +19,7 @@ def word_substituter (tweet)
     if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
     end
-  tweet.join(" ")
-  end
+  end.join(" ")
 end
 
 def bulk_tweet_shortener(array_tweets)
