@@ -15,10 +15,9 @@ def dictionary(word)
 end
 
 def word_substituter (tweet)
-  array = []
   array = tweet.split(" ")
-  array.map do |word|
-    dictionary.map do |key, value|
+  array.collect do |word|
+    dictionary.collect do |key, value|
       if word.downcase == key
         word.replace(value)
       end
